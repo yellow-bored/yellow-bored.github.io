@@ -253,9 +253,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p class="article-excerpt-content">
-          123456789#include&lt;bits/stdc++.h&gt;int main()&#123;    int a,b;    std::cin&gt;&gt;a&gt;&gt;b;    std::cout&lt;&lt;a + b;    return 0;&#125;
-
-
+          OSU二分$DP$
+第一眼还以为是期望$DP$的原题，白兴奋了。
+二分最大值最小显然二分。二分速度。（我写的速度平方）
+$DP$在第一遍二分加贪心写挂之后，我开始怀疑它是$DP$可是式子怎么也推不出来，最后把它套二分里发现刚刚好。$f[i]=max(f[i],f[j]+1)$.$f[i]$表示选了第$i$个，一共点了$x$个点（得了$x$分）。二分判断是否可行时，$n$²$DP$就好。
+细节这题有大量细节，因为二分的是$double$的速度，所以无法直接输出答案，可以贪心（乱搞）一下，二分...
         </p>
         <p class="article-more-link">
           <a href="/2020/11/01/NewBlog/#more">阅读全文</a>
